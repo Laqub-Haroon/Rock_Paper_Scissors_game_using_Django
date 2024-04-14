@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    padding: 50px;
+}
+
+h1 {
+    color: #333;
+}
+
+.game-form {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0 10px;
+}
+
+button img {
+    width: 100px; /* Adjust the size based on your preference */
+    height: 100px; /* Adjust the size based on your preference */
+}
+
+button:focus {
+    outline: none;
+}
+
+/* Optional: Hover effect */
+button:hover img {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+/* Optional: Button styling */
+button[name="choice"] {
+    transition: transform 0.2s ease-in-out;
+}

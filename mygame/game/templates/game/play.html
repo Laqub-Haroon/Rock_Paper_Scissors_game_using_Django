@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Result</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'game/style.css' %}">
+</head>
+<body>
+    <h1>You chose: {{ user_choice }}</h1>
+    <h2>Computer chose: {{ computer_choice }}</h2>
+    <h3>{{ result }}</h3>
+</body>
+</html>

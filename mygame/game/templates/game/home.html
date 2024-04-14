@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stone Paper Scissors</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'game/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to Stone-Paper-Scissors Game</h1>
+    <form action="{% url 'play' %}" method="post" class="game-form">
+        {% csrf_token %}
+        <button type="submit" name="choice" value="Stone">
+        <img src="{% static 'game/stone.jpeg' %}" alt="Stone">
+        </button>
+        <button type="submit" name="choice" value="Paper">
+        <img src="{% static 'game/paper.jpg' %}" alt="Paper">
+        </button>
+        <button type="submit" name="choice" value="Scissor">
+            <img src="{% static 'game/scissor.jpeg' %}" alt="Scissors">
+        </button>
+    </form>
+</body>
+</html>
